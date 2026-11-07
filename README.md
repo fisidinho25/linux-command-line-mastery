@@ -1,0 +1,2 @@
+## Overview
+This project, **Linux and Command Line Mastery**, is designed to transition learners from casual users to confident practitioners capable of navigating the Linux environment with speed and precision. As the command line is the universal interface for cloud systems, containerization, and CI/CD pipelines, this project focuses on building the foundational skills necessary for modern DevOps practices. Learners will move beyond theory to develop muscle memory through practical exercises in file manipulation, system monitoring, and automation.
