@@ -65,6 +65,6 @@ nginx version: nginx/1.24.0 (Ubuntu)```
   - Resolved `sudo` authentication failure by resetting the local user account password via WSL root access (`wsl -u root` and `passwd username`)[cite: 8, 9].
 
 #Learnt %20 for spacing for my screenshots upload
-![Sudo Root Password Reset](../screenshots/sudo%201.png)
-![Apt Package Update Evidence](../screenshots/sudo%202.png)
+![Sudo Root Password Reset](../screenshots/sudo/sudo%201.png)
+![Apt Package Update Evidence](../screenshots/sudo/sudo%202.png)
 * **Technical Note on URI Encoding (`%20`):** When referencing files with spaces via relative paths or URLs, spaces are automatically percent-encoded as `%20` because standard URI syntax does not allow literal whitespace characters in paths.
