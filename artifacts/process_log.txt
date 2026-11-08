@@ -1,0 +1,35 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.4  24232 15524 ?        Ss   Nov07   0:06 /sbin/init
+root           2  0.0  0.0   3804  2572 hvc0     Sl+  Nov07   0:00 /init
+root           3  0.0  0.0   3664  2140 hvc0     S+   Nov07   0:00 init-watcher
+root           7  0.0  0.0   3804  2276 hvc0     Sl+  Nov07   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          59  0.0  0.4  50644 17944 ?        S<s  Nov07   0:01 /usr/lib/systemd/systemd-journald
+systemd+      97  0.0  0.3  22428 14536 ?        Ss   Nov07   0:00 /usr/lib/systemd/systemd-resolved
+root         107  0.0  0.3  34668 11924 ?        Ss   Nov07   0:08 /usr/lib/systemd/systemd-udevd
+root         151  0.0  0.0   2888  2076 ?        Ss   Nov07   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         152  0.0  0.0   4472  3208 ?        Ss   Nov07   0:00 /usr/sbin/cron -f -P
+message+     153  0.0  0.1   8804  5468 ?        Ss   Nov07   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         161  0.0  0.7  44112 29732 ?        Ss   Nov07   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         176  0.0  0.2  18444  9480 ?        Ss   Nov07   0:00 /usr/lib/systemd/systemd-logind
+syslog       211  0.0  0.1 220548  6048 ?        Ssl  Nov07   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         250  0.0  0.0   5492  2844 tty1     Ss+  Nov07   0:00 /usr/sbin/agetty --noreset --noclear --issue-file=/etc/issue:/etc/issue.d:/run/issue.d:/usr/lib/issue.d - linux
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.18.54.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/lib/linux-tools/6.18.54.1-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         476G  285G  191G  60% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.6G  955G   1% /
+none            1.9G   44K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  3.4M  1.9G   1% /init
+none            1.9G  500K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   80K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   80K  1.9G   1% /mnt/wslg/doc
+C:\             476G  285G  191G  60% /mnt/c
+tmpfs           1.9G     0  1.9G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           377M   12K  377M   1% /run/user/1000

@@ -1,2 +1,5 @@
-My linux project
-Task 5 completed
+=== Linux CLI Mastery Project Status ===
+Task 1 & 2: Navigation & File Management - COMPLETED
+Task 3: Permissions & System Monitoring - COMPLETED
+Task 4: Networking & Connectivity - COMPLETED
+Task 5: Redirection, Pipes & Filtering - COMPLETED
