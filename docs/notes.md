@@ -1,29 +1,46 @@
-# Project Notes
+# Linux & CLI Mastery Project - Comprehensive Evidence & Documentation
 
-## Task 1: File Management
-* Practiced basic file creation and manipulation using `touch` and `mv`.
-* Verified file structure and directory listings using `ls` and `ls -la`.
+## 1. File System Navigation
+- Commands: pwd, ls -la, cd
+- Execution Output:
+  fisayo_adedoyin@LAPTOP-930SKSGM:~/linux-command-line-mastery$ pwd
+  /home/fisayo_adedoyin/linux-command-line-mastery
+- Explanation: pwd outputs the absolute path of the current working directory. ls -la lists all contents, including hidden dotfiles, alongside permissions, owner details, and file sizes. This is foundational in DevOps workflows to ensure configurations and scripts are deployed in the correct paths.
 
-## Task 2: Directory Navigation
-* Tracked working paths using `pwd`.
-* Created custom project directories (`myfolder` and `newfolder`) as hands-on evidence of workspace management.
+## 2. File and Directory Management
+- Commands: mkdir, touch, mv, rm
+- Execution Output:
+  mkdir myfolder newfolder
+  touch project_status.txt
+- Explanation: mkdir creates new subdirectories, while touch initializes empty files or updates access timestamps. These commands are used to structure project workspaces and isolate logs or artifacts.
 
-## Task 3: System Monitoring & Admin
-* Inspected disk usage using `df -h`.
-* Checked memory using `free -m`.
-* Granted script execution permissions using `chmod +x`.
+## 3. Permissions and Ownership
+- Commands: chmod +x, chmod 755
+- Execution Output:
+  chmod +x scripts/setup_workspace.sh
+- Explanation: chmod +x modifies file attributes to grant execution rights to shell scripts. 755 grants Read/Write/Execute to the owner, and Read/Execute to group and others, ensuring scripts are runnable while safeguarding production environments from unauthorized modifications.
 
-## Task 4: Networking Basics
-* Inspected active network interfaces using `ip addr`.
-* Tested connectivity using `ping`.
+## 4. Package Installation & Tools
+- Commands: sudo apt update, sudo apt install -y curl
+- Execution Output:
+  Reading package lists... Done
+  curl is already the newest version.
+- Explanation: apt manages software packages on Debian/Ubuntu systems. Updating package lists ensures dependency security and fetches the latest patches before installing system tools.
 
-## Task 5: Pipes & Redirection
-* Managed output streams using `>` and `>>`.
-* Filtered data streams using pipelines (`|`).
-```[cite: 2]
+## 5. Redirection and Data Filtering
+- Commands: >, >>, |, grep
+- Execution Output:
+  echo "Task 5 completed" >> project_status.txt
+  ls -la | grep "project"
+- Explanation: > creates or overwrites files with output streams, while >> safely appends data. The pipe routes standard output from one command as standard input to another, allowing efficient filtering of text patterns using grep without intermediate files.
 
-### How to Save in `nano`:
-1. Press **`Ctrl + O`**, then hit **`Enter`** to save.
-2. Press **`Ctrl + X`** to exit back to your terminal prompt.
-# Project Notes
+## 6. Process and System Monitoring
+- Commands: df -h, free -m, ps aux
+- Execution Output:
+  df -h   # Reports filesystem disk space in human-readable GB/MB
+  free -m # Reports system memory/RAM usage in MB
+  ps aux  # Lists active system processes and PID details
+- Explanation: Monitoring commands allow administrators to track CPU/RAM resource consumption, diagnose performance bottlenecks, and audit active processes before scaling infrastructure.
 
+## Visual Evidence
+- Screenshots showing terminal execution and GitHub sync state are stored in the screenshots directory.
