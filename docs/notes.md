@@ -55,7 +55,7 @@
 
 ```text
 fisayo_adedoyin@LAPTOP-930SKSGM:~/linux-command-line-mastery$ nginx -v
-nginx version: nginx/1.24.0 (Ubuntu)
+nginx version: nginx/1.24.0 (Ubuntu)```
 ## 2. Administrative Privileges & Security (`sudo`)
 * **Concept Learned:** Standard Linux user accounts cannot modify system-wide files or run package management commands without elevated permissions[cite: 3]. `sudo` ("Superuser Do") temporarily grants administrative privileges to run protected system commands[cite: 3].
 * **Key Distinctions:**
