@@ -42,5 +42,17 @@
   ps aux  # Lists active system processes and PID details
 - Explanation: Monitoring commands allow administrators to track CPU/RAM resource consumption, diagnose performance bottlenecks, and audit active processes before scaling infrastructure.
 
+##PHASE 2 (Sudo)
 ## Visual Evidence
 - Screenshots showing terminal execution and GitHub sync state are stored in the screenshots directory.
+
+## Package Management & Web Server Installation
+* **Tool Used:** `apt` (Advanced Packaging Tool for Debian/Ubuntu systems)
+* **Commands Executed:**
+  - `sudo apt update`: Refreshed the local package index against remote repositories.
+  - `sudo apt install -y nginx`: Installed the Nginx web server and required dependencies.
+  - `nginx -v`: Verified successful installation and package version.
+
+```text
+fisayo_adedoyin@LAPTOP-930SKSGM:~/linux-command-line-mastery$ nginx -v
+nginx version: nginx/1.24.0 (Ubuntu)
