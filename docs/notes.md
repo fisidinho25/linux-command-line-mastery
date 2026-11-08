@@ -42,11 +42,11 @@
   ps aux  # Lists active system processes and PID details
 - Explanation: Monitoring commands allow administrators to track CPU/RAM resource consumption, diagnose performance bottlenecks, and audit active processes before scaling infrastructure.
 
-##PHASE 2 (Sudo)
+#PHASE 2 (Sudo)
 ## Visual Evidence
 - Screenshots showing terminal execution and GitHub sync state are stored in the screenshots directory.
 
-## Package Management & Web Server Installation
+## 1. Package Management & Web Server Installation
 * **Tool Used:** `apt` (Advanced Packaging Tool for Debian/Ubuntu systems)
 * **Commands Executed:**
   - `sudo apt update`: Refreshed the local package index against remote repositories.
@@ -56,3 +56,10 @@
 ```text
 fisayo_adedoyin@LAPTOP-930SKSGM:~/linux-command-line-mastery$ nginx -v
 nginx version: nginx/1.24.0 (Ubuntu)
+## 2. Administrative Privileges & Security (`sudo`)
+* **Concept Learned:** Standard Linux user accounts cannot modify system-wide files or run package management commands without elevated permissions[cite: 3]. `sudo` ("Superuser Do") temporarily grants administrative privileges to run protected system commands[cite: 3].
+* **Key Distinctions:**
+  - `nano <file>`: Opens a file with standard user permissions. Read-only for system files like `/etc/hosts`.
+  - `sudo nano <file>`: Runs the text editor with root privileges, allowing changes to system configuration files.
+* **Troubleshooting & Security:**
+  - Resolved `sudo` authentication failure by resetting the local user account password via WSL root access (`wsl -u root` and `passwd username`)[cite: 8, 9].
